@@ -511,6 +511,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Feature\Index.cshtml" />
     <Content Include="Views\Credit\Index.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
