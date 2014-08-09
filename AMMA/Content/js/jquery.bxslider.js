@@ -63,7 +63,7 @@
 
 		// AUTO
 		auto: false,
-		pause: 4000,
+		pause: 5000,
 		autoStart: true,
 		autoDirection: 'next',
 		autoHover: false,
@@ -686,8 +686,8 @@
 				var title = $(this).find('img:first').attr('title');
 				// append the caption
 				if (title != undefined && ('' + title).length) {
-                    $(this).append('<div class="bx-caption"><span>' + title + '</span></div>');
-                }
+					$(this).append('<div class="bx-caption"><span>' + title + '</span></div>');
+				}
 			});
 		}
 

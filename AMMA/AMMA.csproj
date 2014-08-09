@@ -414,6 +414,7 @@
     <Content Include="Content\img\in-press.png" />
     <Content Include="Content\img\launch-bg.jpg" />
     <Content Include="Content\img\less-logo.png" />
+    <Content Include="Content\img\Logo.jpg" />
     <Content Include="Content\img\logos\canon.png" />
     <Content Include="Content\img\logos\cisco.png" />
     <Content Include="Content\img\logos\dell.png" />
