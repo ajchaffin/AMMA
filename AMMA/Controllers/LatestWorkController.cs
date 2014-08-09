@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace AMMA.Controllers
 {
-    public class FeatureController : Controller
+    public class LatestWorkController : Controller
     {
         //
         // GET: /Feature/

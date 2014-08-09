@@ -6,10 +6,10 @@ using System.Web.Mvc;
 
 namespace AMMA.Controllers
 {
-    public class CreditController : Controller
+    public class ScheduleController : Controller
     {
         //
-        // GET: /Credit/
+        // GET: /Schedule/
 
         public ActionResult Index()
         {
