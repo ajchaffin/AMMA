@@ -135,6 +135,7 @@
     <Content Include="Content\css\main-red.css" />
     <Content Include="Content\css\main.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\img\amma logo.jpg" />
     <Content Include="Content\img\blog-large.jpg" />
     <Content Include="Content\img\blog1.jpg" />
     <Content Include="Content\img\blog2.jpg" />
@@ -458,6 +459,7 @@
     <Content Include="Content\img\services3.jpg" />
     <Content Include="Content\img\social-login.png" />
     <Content Include="Content\img\stay-connected.png" />
+    <Content Include="Content\img\SurvivalTacticsLogo.jpg" />
     <Content Include="Content\img\team1.jpg" />
     <Content Include="Content\img\team2.jpg" />
     <Content Include="Content\img\team3.jpg" />
