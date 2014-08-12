@@ -135,6 +135,7 @@
     <Content Include="Content\css\main-red.css" />
     <Content Include="Content\css\main.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\img\amma logo %281%29.jpg" />
     <Content Include="Content\img\amma logo.jpg" />
     <Content Include="Content\img\blog-large.jpg" />
     <Content Include="Content\img\blog1.jpg" />
@@ -434,6 +435,7 @@
     <Content Include="Content\img\news2.jpg" />
     <Content Include="Content\img\news3.jpg" />
     <Content Include="Content\img\page-background.png" />
+    <Content Include="Content\img\Pantjar 7.jpg" />
     <Content Include="Content\img\portfolio1.jpg" />
     <Content Include="Content\img\portfolio2.jpg" />
     <Content Include="Content\img\portfolio3.jpg" />
