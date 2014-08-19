@@ -108,6 +108,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\LinksController.cs" />
     <Compile Include="Controllers\LatestWorkController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -430,6 +431,7 @@
     <Content Include="Content\img\logos\sony.png" />
     <Content Include="Content\img\logos\vimeo.png" />
     <Content Include="Content\img\logos\yahoo.png" />
+    <Content Include="Content\img\MAJ_majapahit_empire_map.jpg" />
     <Content Include="Content\img\mPurpose-logo.png" />
     <Content Include="Content\img\news1.jpg" />
     <Content Include="Content\img\news2.jpg" />
@@ -519,6 +521,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Links\Index.cshtml" />
     <Content Include="Views\Schedule\Index.cshtml" />
+    <Content Include="Views\About\Index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
