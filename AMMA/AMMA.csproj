@@ -109,6 +109,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\InstructorsController.cs" />
     <Compile Include="Controllers\LinksController.cs" />
     <Compile Include="Controllers\LatestWorkController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -415,6 +416,7 @@
     <Content Include="Content\img\homepage-slider\slider-bg9.jpg" />
     <Content Include="Content\img\icomoon-social.png" />
     <Content Include="Content\img\in-press.png" />
+    <Content Include="Content\img\Kris.jpg" />
     <Content Include="Content\img\launch-bg.jpg" />
     <Content Include="Content\img\less-logo.png" />
     <Content Include="Content\img\Logo.jpg" />
@@ -522,6 +524,7 @@
     <Content Include="Views\Links\Index.cshtml" />
     <Content Include="Views\Schedule\Index.cshtml" />
     <Content Include="Views\About\Index.cshtml" />
+    <Content Include="Views\Instructors\Index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
