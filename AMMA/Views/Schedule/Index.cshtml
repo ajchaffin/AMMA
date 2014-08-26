@@ -8,6 +8,180 @@
 <html class="no-js">
 <!--<![endif]-->
 
+<head>
+    <style>
+        /*--------------------------------------------------------------------------
+        +	TIMETABLE
+        --------------------------------------------------------------------------*/
+
+        .timetable {
+            width: 100%;
+            /*font-size: 11px;*/
+            color: #C5C5C5;
+            margin-top: 30px;
+            background: #151515;
+        }
+
+            .timetable th, .timetable td {
+                width: 12.5%;
+                text-align: center;
+                vertical-align: middle;
+                padding: 15px;
+            }
+
+            .timetable tbody tr {
+                border-bottom: 1px dashed #454545;
+                /*background: url('../images/dotted_line.png') left top repeat-x;*/
+                vertical-align: middle;
+            }
+
+            .timetable .row_gray {
+                background-color: #202020;
+            }
+
+            .timetable .event {
+                background-color: #409915;
+                color: #FFF;
+                border-bottom: 1px solid #151515;
+                border-right: 1px solid #151515;
+                padding: 10px;
+            }
+
+            .timetable .all {
+                background-color: #fe7129;
+                color: #FFF;
+                border-bottom: 1px solid #151515;
+                border-right: 1px solid #151515;
+                padding: 10px;
+            }
+
+            .timetable .kids {
+                background-color: #376bfc;
+                color: #FFF;
+                border-bottom: 1px solid #151515;
+                border-right: 1px solid #151515;
+                padding: 10px;
+            }
+
+            .timetable .discovery {
+                background-color: #9bcdfe;
+                color: #FFF;
+                border-bottom: 1px solid #151515;
+                border-right: 1px solid #151515;
+                padding: 10px;
+            }
+
+            .timetable .beginners {
+                background-color: #fecc2f;
+                color: #333;
+                border-bottom: 1px solid #151515;
+                border-right: 1px solid #151515;
+                padding: 10px;
+            }
+
+                .timetable .beginners a {
+                    color: #333;
+                }
+
+            .timetable .advanced {
+                background-color: #fb0d1c;
+                color: #FFF;
+                border-bottom: 1px solid #151515;
+                border-right: 1px solid #151515;
+                padding: 10px;
+            }
+
+            .timetable .black {
+                background-color: #000;
+                color: #FFF;
+                border-bottom: 1px solid #151515;
+                border-right: 1px solid #151515;
+                padding: 10px;
+            }
+
+            .timetable td a {
+                display: block;
+                color: #FFF;
+                font-weight: bold;
+                margin-bottom: 2px;
+            }
+
+            .timetable .event a:hover {
+                text-decoration: underline;
+            }
+
+            /* timetable in footer */
+            .timetable.small {
+                background: transparent;
+                font-size: 11px;
+                margin-top: 0;
+                padding-top: 0 !important;
+            }
+
+        .box_header {
+            float: left;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #409915;
+            clear: both;
+            margin-top: 10px;
+        }
+
+        .timetable.small .box_header:first-child {
+            margin-top: 0;
+        }
+
+        .opening_hours {
+            float: left;
+            clear: both;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        ul.items_list li {
+            float: left;
+            width: 235px;
+            /*width: 105px;*/
+            /*padding: 10px 0 5px 25px !important;*/
+            padding: 5px 0 5px 20px !important;
+            border-bottom: 1px solid #eee;
+            /*background-position: left center;*/
+            background-position: -787px 9px;
+            background-repeat: no-repeat;
+        }
+
+        .items_list.dark li {
+            border-color: #353535;
+        }
+
+        .opening_hours li {
+            /*width: 265px;*/
+        }
+
+        .icon_clock_green {
+            /*background-image: url('../images/icon_clock_green.png');*/
+        }
+
+        .items_list .value {
+            float: right;
+            color: #000;
+        }
+
+        .items_list a,
+        .items_list span {
+            float: left;
+            color: #000;
+        }
+
+        .items_list.gray span, .items_list.gray .value, .items_list.dark a, .items_list.dark span, .items_list.dark .value {
+            color: #C5C5C5;
+        }
+
+        .footer-sidebar-widget {
+            margin-bottom: 0px !important;
+        }
+    </style>
+</head>
+
 <body>
     <!-- Page Title -->
     <div class="section section-breadcrumbs">
@@ -23,22 +197,187 @@
     <div class="section">
         <div class="container">
             <div class="row service-wrapper-row">
-                <div class="col-sm-10">
-
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">
-                            <div id="fb-root"></div>
-                            <script>(function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/all.js#xfbml=1"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script>
-                            <div class="fb-post" data-href="https://www.facebook.com/ammadayton/photos/a.655239711237876.1073741827.654317127996801/655916734503507/?type=1" data-width="750"><div class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ammadayton/photos/a.655239711237876.1073741827.654317127996801/655916734503507/?type=1">Post</a> by <a href="https://www.facebook.com/ammadayton">Academy of Majapahit Martial Arts</a>.</div></div>
-                        </div>
-                    </div>
-
+                <div class="col-sm-12">
+                                    <table class="timetable" border="1">
+                                        <tbody>
+                                            <tr valign="middle">
+                                                <td>Monday</td>
+                                                <td>Tuesday</td>
+                                                <td>Wednesday</td>
+                                                <td>Thursday</td>
+                                                <td>Friday</td>
+                                                <td>Saturday</td>
+                                                <td>Sunday</td>
+                                            </tr>
+                                            <tr class="row_gray">
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="kids" rowspan="2"><a title="Kali Majapahit Kids" href="http://www.kali-majapahit.com//classes/kali-majapahit-kids/">KM Kids</a> 9:30 &#8211; 10:30</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr valign="middle">
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr class="row_gray">
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="discovery"><a title="Kali Majapahit Discovery" href="http://www.kali-majapahit.com//classes/kali-majapahit-discovery/">KM Discovery</a> 10:45 &#8211; 11:15</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="event" rowspan="2"><a href="http://www.kali-majapahit.com//classes/kali-majapahit-adults-beginners/">KM Beginners</a> 11:30 &#8211; 12:30</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr class="row_gray">
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr class="row_gray">
+                                                <td class="all" rowspan="2"><a href="http://www.kali-majapahit.com//classes/kali-majapahit-adults-beginners/">KM All Levels</a> 12:30 &#8211; 1:30</td>
+                                                <td></td>
+                                                <td class="all" rowspan="2"><a href="http://www.kali-majapahit.com//classes/kali-majapahit-adults-beginners/">KM All Levels</a> 12:30 &#8211; 1:30</td>
+                                                <td><a href="http://www.kali-majapahit.com//classes/kali-majapahit-adults-beginners/"> </a></td>
+                                                <td class="all" rowspan="2"><a href="http://www.kali-majapahit.com//classes/kali-majapahit-adults-beginners/">Sparring Class All Levels</a> 12:30 &#8211; 1:30</td>
+                                                <td class="advanced" rowspan="2"><a title="Kali Majapahit Intermediates / Advanced" href="http://www.kali-majapahit.com//classes/kali-majapahit-intermediates-advanced/">KM Inter. / Adv.</a> 12:45 &#8211; 13:45</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr class="row_gray">
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr class="row_gray">
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr class="row_gray">
+                                                <td class="kids" rowspan="2"><a title="Kali Majapahit Kids" href="http://www.kali-majapahit.com//classes/kali-majapahit-kids/">KM Kids</a> 5:30 &#8211; 6:20</td>
+                                                <td></td>
+                                                <td class="kids" rowspan="2"><a title="Kali Majapahit Kids" href="http://www.kali-majapahit.com//classes/kali-majapahit-kids/">KM Kids</a> 5:30 &#8211; 6:20</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr class="row_gray">
+                                                <td class="beginners" rowspan="2"><a href="http://www.kali-majapahit.com//classes/kali-majapahit-adults-beginners/">KM Beginners</a> 6:30 &#8211; 7:30</td>
+                                                <td></td>
+                                                <td class="beginners" rowspan="2"><a href="http://www.kali-majapahit.com//classes/kali-majapahit-adults-beginners/">KM Beginners</a> 6:30 &#8211; 7:30</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr class="row_gray">
+                                                <td class="beginners" rowspan="2"><a href="http://www.kali-majapahit.com//classes/kali-majapahit-adults-beginners/">KM Beginners</a> 7:45 &#8211; 8:45</td>
+                                                <td></td>
+                                                <td class="advanced" rowspan="2"><a title="Kali Majapahit Intermediates / Advanced" href="http://www.kali-majapahit.com//classes/kali-majapahit-intermediates-advanced/">KM Inter. / Adv.</a> 7:45 &#8211; 8:45</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr class="row_gray">
+                                                <td class="advanced" rowspan="2"><a title="Kali Majapahit Intermediates / Advanced" href="http://www.kali-majapahit.com//classes/kali-majapahit-intermediates-advanced/">KM Inter. / Adv.</a> 9:00 &#8211; 10:00</td>
+                                                <td class="beginners" rowspan="2"><a href="http://www.kali-majapahit.com//classes/kali-majapahit-adults-beginners/">KM Beginners</a> 9:00 &#8211; 10:00</td>
+                                                <td class="black" rowspan="2"><a href="#">Black Belts</a>   9:00 &#8211; 10:00</td>
+                                                <td class="beginners" rowspan="2"><a href="http://www.kali-majapahit.com//classes/kali-majapahit-adults-beginners/">KM Beginners</a> 9:00 &#8211; 10:00</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                 </div>
             </div>
         </div>
     </div>
-
-
 </body>
 </html>
-
