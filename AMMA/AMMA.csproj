@@ -416,7 +416,7 @@
     <Content Include="Content\img\homepage-slider\slider-bg9.jpg" />
     <Content Include="Content\img\icomoon-social.png" />
     <Content Include="Content\img\in-press.png" />
-    <Content Include="Content\img\Kris.jpg" />
+    <Content Include="Content\img\Kriss.png" />
     <Content Include="Content\img\launch-bg.jpg" />
     <Content Include="Content\img\less-logo.png" />
     <Content Include="Content\img\Logo.jpg" />
@@ -489,6 +489,7 @@
     <Content Include="Content\js\main-menu.js" />
     <Content Include="Content\js\modernizr-2.6.2-respond-1.1.0.min.js" />
     <Content Include="Content\js\template.js" />
+    <Content Include="Content\img\TempleDawn.png" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
