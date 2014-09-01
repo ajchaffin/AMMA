@@ -110,9 +110,10 @@
   <ItemGroup>
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\ClassesController.cs" />
+    <Compile Include="Controllers\EventsController.cs" />
     <Compile Include="Controllers\InstructorsController.cs" />
     <Compile Include="Controllers\LinksController.cs" />
-    <Compile Include="Controllers\LatestWorkController.cs" />
+    <Compile Include="Controllers\GalleryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ScheduleController.cs" />
     <Compile Include="Global.asax.cs">
@@ -434,7 +435,7 @@
     <Content Include="Content\img\logos\sony.png" />
     <Content Include="Content\img\logos\vimeo.png" />
     <Content Include="Content\img\logos\yahoo.png" />
-    <Content Include="Content\img\MAJ_majapahit_empire_map.jpg" />
+    <Content Include="Content\img\MAJ_majapahit_empire_map.png" />
     <Content Include="Content\img\mPurpose-logo.png" />
     <Content Include="Content\img\news1.jpg" />
     <Content Include="Content\img\news2.jpg" />
@@ -521,13 +522,14 @@
     <None Include="Properties\PublishProfiles\AMMADayton.pubxml" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\LatestWork\Index.cshtml" />
+    <Content Include="Views\Gallery\Index.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Links\Index.cshtml" />
     <Content Include="Views\Schedule\Index.cshtml" />
     <Content Include="Views\About\Index.cshtml" />
     <Content Include="Views\Instructors\Index.cshtml" />
     <Content Include="Views\Classes\Index.cshtml" />
+    <Content Include="Views\Events\Index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
