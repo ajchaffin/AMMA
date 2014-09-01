@@ -9,37 +9,33 @@
 <!--<![endif]-->
 
 <head>
+    <meta charset="utf-8">
+    <title>Schedule</title>
     <style>
-        /*--------------------------------------------------------------------------
-        +	TIMETABLE
-        --------------------------------------------------------------------------*/
-
-        .timetable {
+        .schedule {
             width: 100%;
-            /*font-size: 11px;*/
             color: #C5C5C5;
             margin-top: 30px;
             background: #151515;
         }
 
-            .timetable th, .timetable td {
+            .schedule th, .schedule td {
                 width: 12.5%;
                 text-align: center;
                 vertical-align: middle;
                 padding: 15px;
             }
 
-            .timetable tbody tr {
+            .schedule tbody tr {
                 border-bottom: 1px dashed #454545;
-                /*background: url('../images/dotted_line.png') left top repeat-x;*/
                 vertical-align: middle;
             }
 
-            .timetable .row_gray {
+            .schedule .alt_row {
                 background-color: #202020;
             }
 
-            .timetable .filipino {
+            .schedule .filipino {
                 background-color: #cc66ff;
                 color: black;
                 border-bottom: 1px solid #151515;
@@ -47,7 +43,7 @@
                 padding: 10px;
             }
 
-            .timetable .openGym {
+            .schedule .openGym {
                 background-color: #66ccff;
                 color: black;
                 border-bottom: 1px solid #151515;
@@ -55,7 +51,7 @@
                 padding: 10px;
             }
 
-            .timetable .thai {
+            .schedule .thai {
                 background-color: #ff5050;
                 color: black;
                 border-bottom: 1px solid #151515;
@@ -63,7 +59,7 @@
                 padding: 10px;
             }
 
-            .timetable .majapahit {
+            .schedule .majapahit {
                 background-color: #66ff66;
                 color: black;
                 border-bottom: 1px solid #151515;
@@ -71,7 +67,7 @@
                 padding: 10px;
             }
 
-            .timetable .sayoc {
+            .schedule .sayoc {
                 background-color: #ffffff;                
                 color: black;
                 border-bottom: 1px solid #151515;
@@ -79,7 +75,7 @@
                 padding: 10px;
             }
 
-            .timetable .kaliSilat {
+            .schedule .kaliSilat {
                 background-color: #ffff66;                
                 color: black;
                 border-bottom: 1px solid #151515;
@@ -87,7 +83,7 @@
                 padding: 10px;
             }
             
-            .timetable .traditionalSilat {
+            .schedule .traditionalSilat {
                 background-color: #ff9966;                
                 color: black;
                 border-bottom: 1px solid #151515;
@@ -95,7 +91,7 @@
                 padding: 10px;
             }
 
-            .timetable .advancedKali {
+            .schedule .advancedKali {
                 background-color: #3333ff;                
                 color: black;
                 border-bottom: 1px solid #151515;
@@ -103,7 +99,7 @@
                 padding: 10px;
             }            
 
-            .timetable .black {
+            .schedule .black {
                 background-color: #000;
                 color: #FFF;
                 border-bottom: 1px solid #151515;
@@ -111,79 +107,19 @@
                 padding: 10px;
             }
 
-            .timetable td a {
+            .schedule td a {
                 display: block;
                 color: black;
                 font-weight: bold;
                 margin-bottom: 2px;
             }
-
-            .timetable .event a:hover {
-                text-decoration: underline;
-            }
-
-            /* timetable in footer */
-            .timetable.small {
+            
+            .schedule.small {
                 background: transparent;
                 font-size: 11px;
                 margin-top: 0;
                 padding-top: 0 !important;
             }
-
-        .box_header {
-            float: left;
-            padding-bottom: 5px;
-            border-bottom: 1px solid #409915;
-            clear: both;
-            margin-top: 10px;
-        }
-
-        .timetable.small .box_header:first-child {
-            margin-top: 0;
-        }
-
-        .opening_hours {
-            float: left;
-            clear: both;
-            margin-top: 0;
-            margin-bottom: 10px;
-        }
-
-        ul.items_list li {
-            float: left;
-            width: 235px;
-            padding: 5px 0 5px 20px !important;
-            border-bottom: 1px solid #eee;
-            background-position: -787px 9px;
-            background-repeat: no-repeat;
-        }
-
-        .items_list.dark li {
-            border-color: #353535;
-        }
-
-        .opening_hours li {
-            /*width: 265px;*/
-        }
-
-        .items_list .value {
-            float: right;
-            color: #000;
-        }
-
-        .items_list a,
-        .items_list span {
-            float: left;
-            color: #000;
-        }
-
-        .items_list.gray span, .items_list.gray .value, .items_list.dark a, .items_list.dark span, .items_list.dark .value {
-            color: #C5C5C5;
-        }
-
-        .footer-sidebar-widget {
-            margin-bottom: 0px !important;
-        }
     </style>
 </head>
 
@@ -203,121 +139,120 @@
         <div class="container">
             <div class="row service-wrapper-row">
                 <div class="col-sm-12">
-                                    <table class="timetable" border="1">
-                                        <tbody>
-                                            <tr valign="middle">
-                                                <td>Monday</td>
-                                                <td>Tuesday</td>
-                                                <td>Wednesday</td>
-                                                <td>Thursday</td>
-                                                <td>Friday</td>
-                                                <td>Saturday</td>
-                                            </tr>
-                                            <tr class="row_gray">
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td class="filipino" rowspan="2"><a>Filipino Martial Arts</a>10:30 - 11:30</td>
-                                                <td></td>
-                                                <td class="openGym" rowspan="2"><a>Open Gym</a>10:30 - 11:30</td>
-                                                
-                                            </tr>
-                                            <tr valign="middle">
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr class="row_gray">
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td class="kaliSilat"><a title="Kali/Silat">Kali/Silat</a>11:30 - 12:30</td>
-                                                
-                                            </tr>
-                                            <tr>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td class="traditionalSilat" rowspan="2"><a>Traditional Pentjak Silat</a>12:30 - 1:30</td>
-                                                
-                                            </tr>
-                                            <tr class="row_gray">
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr class="row_gray">
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr class="row_gray">
-                                                <td class="openGym" rowspan="2"><a>Open Gym</a> 6:00 - 7:00</td>
-                                                <td class="thai" rowspan="2"><a>Thai & Filipino Boxing</a> 6:00 - 7:00</td>
-                                                <td></td>
-                                                <td class="thai" rowspan="2"><a>Thai & Filipino Boxing</a> 6:00 - 7:00</td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr class="row_gray">
-                                                <td class="advancedKali" rowspan="2"><a>** Advanced Kali</a> 7:00 - 8:00</td>
-                                                <td class="majapahit" rowspan="2"><a>Majapahit Silat</a> 7:00 - 8:00</td>
-                                                <td></td>
-                                                <td class="majapahit" rowspan="2"><a>Majapahit Silat</a> 7:00 - 8:00</td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr class="row_gray">
-                                                <td class="sayoc" rowspan="2"><a>** Sayoc Ohio Training Group</a>8:00 - 9:00</td>
-                                                <td class="filipino" rowspan="2"><a>Filipino Martial Arts</a>8:00 - 9:00</td>
-                                                <td></td>
-                                                <td class="filipino" rowspan="2"><a>Filipino Martial Arts</a>8:00 - 9:00</td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                    <table class="schedule" border="1">
+                        <tbody>
+                            <tr>
+                                <td>Monday</td>
+                                <td>Tuesday</td>
+                                <td>Wednesday</td>
+                                <td>Thursday</td>
+                                <td>Friday</td>
+                                <td>Saturday</td>
+                            </tr>
+                            <tr class="alt_row">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="filipino" rowspan="2"><a title="Filipino Martial Arts" href='@Url.Action("Index", "Classes", new { id = 1 })'>Filipino Martial Arts</a>10:30 - 11:30</td>
+                                <td></td>
+                                <td class="openGym" rowspan="2"><a title="Open Gym" href='@Url.Action("Index", "Classes", new { id = 3 })'>Open Gym</a>10:30 - 11:30</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="alt_row">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="kaliSilat"><a title="Kali/Silat" href='@Url.Action("Index", "Classes", new { id = 0 })'>Kali/Silat</a>11:30 - 12:30</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="traditionalSilat" rowspan="2"><a title="Traditional Pentjak Silat" href='@Url.Action("Index", "Classes", new { id = 4 })'>Traditional Pentjak Silat</a>12:30 - 1:30</td>
+                            </tr>
+                            <tr class="alt_row">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="alt_row">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="alt_row">
+                                <td class="openGym" rowspan="2"><a title="Open Gym" href='@Url.Action("Index", "Classes", new { id = 3 })'>Open Gym</a> 6:00 - 7:00</td>
+                                <td class="thai" rowspan="2"><a title="Thai & Filipino Boxing" href='@Url.Action("Index", "Classes", new { id = 2 })'>Thai & Filipino Boxing</a> 6:00 - 7:00</td>
+                                <td></td>
+                                <td class="thai" rowspan="2"><a title="Thai & Filipino Boxing" href='@Url.Action("Index", "Classes", new { id = 2 })'>Thai & Filipino Boxing</a> 6:00 - 7:00</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="alt_row">
+                                <td class="advancedKali" rowspan="2"><a title="Advanced Kali" href='@Url.Action("Index", "Classes", new { id = 1 })'>** Advanced Kali</a> 7:00 - 8:00</td>
+                                <td class="majapahit" rowspan="2"><a title="Majapahit Silat" href='@Url.Action("Index", "Classes", new { id = 0 })'>Majapahit Silat</a> 7:00 - 8:00</td>
+                                <td></td>
+                                <td class="majapahit" rowspan="2"><a title="Majapahit Silat" href='@Url.Action("Index", "Classes", new { id = 0 })'>Majapahit Silat</a> 7:00 - 8:00</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="alt_row">
+                                <td class="sayoc" rowspan="2"><a title="Sayoc" href='@Url.Action("Index", "Classes", new { id = 5 })'>** Sayoc Ohio Training Group</a>8:00 - 9:00</td>
+                                <td class="filipino" rowspan="2"><a title="Filipino Martial Arts" href='@Url.Action("Index", "Classes", new { id = 1 })'>Filipino Martial Arts</a>8:00 - 9:00</td>
+                                <td></td>
+                                <td class="filipino" rowspan="2"><a title="Filipino Martial Arts" href='@Url.Action("Index", "Classes", new { id = 1 })'>Filipino Martial Arts</a>8:00 - 9:00</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br/>
+                    <h4>**Instructor approval required to take this class</h4>
                 </div>
             </div>
         </div>

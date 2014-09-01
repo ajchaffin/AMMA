@@ -109,6 +109,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\ClassesController.cs" />
     <Compile Include="Controllers\InstructorsController.cs" />
     <Compile Include="Controllers\LinksController.cs" />
     <Compile Include="Controllers\LatestWorkController.cs" />
@@ -526,6 +527,7 @@
     <Content Include="Views\Schedule\Index.cshtml" />
     <Content Include="Views\About\Index.cshtml" />
     <Content Include="Views\Instructors\Index.cshtml" />
+    <Content Include="Views\Classes\Index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
