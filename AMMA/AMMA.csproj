@@ -435,6 +435,7 @@
     <Content Include="Content\img\logos\sony.png" />
     <Content Include="Content\img\logos\vimeo.png" />
     <Content Include="Content\img\logos\yahoo.png" />
+    <Content Include="Content\img\MAJ_majapahit_empire_map.jpg" />
     <Content Include="Content\img\MAJ_majapahit_empire_map.png" />
     <Content Include="Content\img\mPurpose-logo.png" />
     <Content Include="Content\img\news1.jpg" />
@@ -458,6 +459,7 @@
     <Content Include="Content\img\product6.jpg" />
     <Content Include="Content\img\product7.jpg" />
     <Content Include="Content\img\product8.jpg" />
+    <Content Include="Content\img\Rat2.jpg" />
     <Content Include="Content\img\service-icon\box.png" />
     <Content Include="Content\img\service-icon\chat.png" />
     <Content Include="Content\img\service-icon\diamond.png" />
@@ -530,6 +532,8 @@
     <Content Include="Views\Instructors\Index.cshtml" />
     <Content Include="Views\Classes\Index.cshtml" />
     <Content Include="Views\Events\Index.cshtml" />
+    <None Include="Properties\PublishProfiles\TestAMMADayton %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\TestAMMADayton.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
