@@ -67,8 +67,8 @@
                 padding: 10px;
             }
 
-            .schedule .sayoc {
-                background-color: #ffffff;                
+            .schedule .cimande {
+                background-color: white;                
                 color: black;
                 border-bottom: 1px solid #151515;
                 border-right: 1px solid #151515;
@@ -97,7 +97,39 @@
                 border-bottom: 1px solid #151515;
                 border-right: 1px solid #151515;
                 padding: 10px;
-            }            
+            }
+
+            .schedule .junFan {
+                background-color: #ff6a00;
+                color: black;
+                border-bottom: 1px solid #151515;
+                border-right: 1px solid #151515;
+                padding: 10px;
+            }
+
+            .schedule .thaiBoxing {
+                background-color: #C5C5C5;
+                color: black;
+                border-bottom: 1px solid #151515;
+                border-right: 1px solid #151515;
+                padding: 10px;
+            }
+
+            .schedule .dirtyBoxing {
+                background-color: saddlebrown;
+                color: black;
+                border-bottom: 1px solid #151515;
+                border-right: 1px solid #151515;
+                padding: 10px;
+            }
+
+            .schedule .fourthFriday {
+                background-color: orangered;
+                color: black;
+                border-bottom: 1px solid #151515;
+                border-right: 1px solid #151515;
+                padding: 10px;
+            }
 
             .schedule .black {
                 background-color: #000;
@@ -155,7 +187,7 @@
                                 <td></td>
                                 <td class="filipino" rowspan="2"><a title="Filipino Martial Arts" href='@Url.Action("Index", "Classes", new { id = 1 })'>Filipino Martial Arts</a>10:30 - 11:30</td>
                                 <td></td>
-                                <td class="openGym" rowspan="2"><a title="Open Gym" href='@Url.Action("Index", "Classes", new { id = 3 })'>Open Gym</a>10:30 - 11:30</td>
+                                <td class="thaiBoxing" rowspan="2"><a title="Thai Boxing" href='@Url.Action("Index", "Classes", new { id = 3 })'>Thai Boxing</a>10:30 - 11:30</td>
                             </tr>
                             <tr>
                                 <td></td>
@@ -169,7 +201,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td class="kaliSilat"><a title="Kali/Silat" href='@Url.Action("Index", "Classes", new { id = 0 })'>Kali/Silat</a>11:30 - 12:30</td>
+                                <td class="filipino"><a title="Filipino Martial Arts" href='@Url.Action("Index", "Classes", new { id = 1 })'>Filipino Martial Arts</a>11:30 - 12:30</td>
                             </tr>
                             <tr>
                                 <td></td>
@@ -177,25 +209,9 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td class="traditionalSilat" rowspan="2"><a title="Traditional Pentjak Silat" href='@Url.Action("Index", "Classes", new { id = 4 })'>Traditional Pentjak Silat</a>12:30 - 1:30</td>
+                                <td class="traditionalSilat" rowspan="2"><a title="Traditional Pentjak Silat" href='@Url.Action("Index", "Classes", new { id = 6 })'>Traditional Pentjak Silat</a>12:30 - 1:30</td>
                             </tr>
                             <tr class="alt_row">
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr class="alt_row">
-                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -211,10 +227,26 @@
                                 <td></td>
                             </tr>
                             <tr class="alt_row">
-                                <td class="openGym" rowspan="2"><a title="Open Gym" href='@Url.Action("Index", "Classes", new { id = 3 })'>Open Gym</a> 6:00 - 7:00</td>
-                                <td class="thai" rowspan="2"><a title="Thai & Filipino Boxing" href='@Url.Action("Index", "Classes", new { id = 2 })'>Thai & Filipino Boxing</a> 6:00 - 7:00</td>
                                 <td></td>
-                                <td class="thai" rowspan="2"><a title="Thai & Filipino Boxing" href='@Url.Action("Index", "Classes", new { id = 2 })'>Thai & Filipino Boxing</a> 6:00 - 7:00</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="alt_row">
+                                <td class="openGym" rowspan="2"><a title="Open Gym" href='@Url.Action("Index", "Classes", new { id = 5 })'>Open Gym</a> 6:00 - 7:00</td>
+                                <td class="junFan" rowspan="2"><a title="Jun Fan" href='@Url.Action("Index", "Classes", new { id = 4 })'>Jun Fan JKD Kick-boxing</a> 6:00 - 7:00</td>
+                                <td></td>
+                                <td class="dirtyBoxing" rowspan="2"><a title="Filipino Dirty Boxing" href='@Url.Action("Index", "Classes", new { id = 2 })'>Filipino "Dirty" Boxing</a> 6:00 - 7:00</td>
                                 <td></td>
                                 <td></td>
                             </tr>
@@ -224,29 +256,36 @@
                                 <td></td>
                             </tr>
                             <tr class="alt_row">
-                                <td class="advancedKali" rowspan="2"><a title="Advanced Kali" href='@Url.Action("Index", "Classes", new { id = 1 })'>** Advanced Kali</a> 7:00 - 8:00</td>
+                                <td class="advancedKali" rowspan="2"><a title="Advanced Kali" href='@Url.Action("Index", "Classes", new { id = 1 })'>Kali 12 Areas (area rotates weekly)</a> 7:00 - 8:00</td>
                                 <td class="majapahit" rowspan="2"><a title="Majapahit Silat" href='@Url.Action("Index", "Classes", new { id = 0 })'>Majapahit Silat</a> 7:00 - 8:00</td>
                                 <td></td>
                                 <td class="majapahit" rowspan="2"><a title="Majapahit Silat" href='@Url.Action("Index", "Classes", new { id = 0 })'>Majapahit Silat</a> 7:00 - 8:00</td>
-                                <td></td>
+                                <td class="fourthFriday" rowspan="4">
+                                    Sparring
+                                    <br />
+                                    Drumming
+                                    <br />
+                                    Open Gym
+                                    <br />
+                                    (4th Friday of the month)
+                                    <br />
+                                    7:00 - 9:00
+                                </td>
                                 <td></td>
                             </tr>
                             <tr>
                                 <td></td>
                                 <td></td>
-                                <td></td>
                             </tr>
                             <tr class="alt_row">
-                                <td class="sayoc" rowspan="2"><a title="Sayoc" href='@Url.Action("Index", "Classes", new { id = 5 })'>** Sayoc Ohio Training Group</a>8:00 - 9:00</td>
+                                <td class="cimande" rowspan="2"><a title="Cimande" href='@Url.Action("Index", "Classes", new { id = 7 })'>** Cimande (Conditioning)</a>8:00 - 9:00</td>
                                 <td class="filipino" rowspan="2"><a title="Filipino Martial Arts" href='@Url.Action("Index", "Classes", new { id = 1 })'>Filipino Martial Arts</a>8:00 - 9:00</td>
                                 <td></td>
                                 <td class="filipino" rowspan="2"><a title="Filipino Martial Arts" href='@Url.Action("Index", "Classes", new { id = 1 })'>Filipino Martial Arts</a>8:00 - 9:00</td>
                                 <td></td>
-                                <td></td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td></td>
+                                <td></td>                                
                                 <td></td>
                             </tr>
                         </tbody>

@@ -950,11 +950,11 @@ Sequence also relies on the following open source scripts:
 					timingFunction = timingFunction.split(',')[0]; //only use one timing function
 
 					var timingFunctionToCubicBezier = {
-					    "linear" : "cubic-bezier(0.0,0.0,1.0,1.0)",
-					    "ease"   : "cubic-bezier(0.25, 0.1, 0.25, 1.0)",
-					    "ease-in": "cubic-bezier(0.42, 0.0, 1.0, 1.0)",
-					    "ease-in-out": "cubic-bezier(0.42, 0.0, 0.58, 1.0)",
-					    "ease-out": "cubic-bezier(0.0, 0.0, 0.58, 1.0)"
+						"linear" : "cubic-bezier(0.0,0.0,1.0,1.0)",
+						"ease"   : "cubic-bezier(0.25, 0.1, 0.25, 1.0)",
+						"ease-in": "cubic-bezier(0.42, 0.0, 1.0, 1.0)",
+						"ease-in-out": "cubic-bezier(0.42, 0.0, 0.58, 1.0)",
+						"ease-out": "cubic-bezier(0.0, 0.0, 0.58, 1.0)"
 					};
 
 					if(timingFunction.indexOf("cubic-bezier") < 0) { //if the timing-function returned isn't a cubic-bezier()
@@ -1292,7 +1292,7 @@ Sequence also relies on the following open source scripts:
 		return this.each(function() {
 			if (!$.data(this, 'sequence')) { //prevent multiple initiations on the same element
 				$.data(this, 'sequence', new Sequence($(this), options, defaults));
-      }
+	  }
 		});
 	};
 })(jQuery);

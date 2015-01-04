@@ -7,20 +7,21 @@
 <head>
     <meta charset="utf-8">
     <title>Class Descriptions</title>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+    <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
     <link rel="stylesheet" href="/resources/demos/style.css">
     <script>
         var tabNum = 0;
         @{
             if (TempData["CurrentTab"] != null){
                 @:tabNum=('@(TempData["CurrentTab"])');
-            }
-        }
+                }
+        } 
 
-        $(function () {            
-            $("#tabs").tabs({ active: tabNum });
+        $(function () {
+            $("#accordion").accordion({ heightStyle: "content", active: parseInt(tabNum)});
         });
     </script>
 </head>
@@ -40,90 +41,144 @@
         <div class="container">
             <div class="row service-wrapper-row">
                 <div class="col-sm-12">
-                    <div id="tabs">
-                        <ul>
-                            <li><a href="#tabs-1">Majapahit Silat</a></li>
-                            <li><a href="#tabs-2">Filipino Martial Arts</a></li>
-                            <li><a href="#tabs-3">Thai & Filipino Boxing</a></li>
-                            <li><a href="#tabs-4">Open Gym </a></li>
-                            <li><a href="#tabs-5">Traditional Pentjak Silat</a></li>
-                            <li><a href="#tabs-6">Sayoc Ohio Training Group</a></li>
-                        </ul>
-                        <div id="tabs-1">
+                    <div id="accordion">
+                        <h3>Majapahit Silat</h3>
+                        <div>
                             <p>
                                 Silat is a blanket term for the ancient indigenous martial arts of Southeast Asia.
+                            </p>
+                            <p>
+                                Silat is found in
+                                <ul>
+                                    <li>
+                                        Indonesia
+                                    </li>
+                                    <li>
+                                        Malaysia
+                                    </li>
+                                    <li>
+                                        Singapore
+                                    </li>
+                                    <li>
+                                        Southern Burma
+                                    </li>
+                                    <li>
+                                        Southern Thailand
+                                    </li>
+                                    <li>
+                                        Southern Philippines
+                                    </li>
+                                </ul>
                             </p>
                             <p>
                                 Versatile, comprehensive and well rounded, the system utilizes practical and fluid movements to deal with multiple opponents.
                             </p>
                             <p>
-                                Silat is found in Indonesia, Malaysia, Singapore, Southern Burma, Southern Thailand and Southern Philippines.
+                                Learn Harimau –the famous tiger system from Sumatra, and many other methods named after ancient villages and old world Silat practitioners.
                             </p>
                             <p>
-                                Learn Harimau –the famous tiger system from Sumatra, and many other methods named after ancient villages and old world Silat practitioners. Come and experience the exotic Southeast Asian Martial Arts! You’ll have the best time while practicing a serious martial art.
-                            </p>
-                        </div>
-                        <div id="tabs-2">
-                            <p>
-                                The highly sophisticated and comprehensive martial art from the Philippines is weapon based, but ultimately an empty hand system.                                  
-                            </p>
-                            <p>
-                                The Filipino program introduces students to 12 main areas, including, but not limited to single stick, double stick, stick & dagger, double dagger, panatukan (Filipino boxing), sikaran (Filipino kicking methods), spear, sarong and projectiles.
-                            </p>
-                            <p>
-                                In the US as long ago as the 1500′s, the Filipino Martial Arts have something to benefit everyone. Developed for “mass attack” as well as single opponent confrontations, the training heightens student’s awareness of their surroundings and teaches them to use their environment as tools of combat.
-                            </p>
-                            <p>
-                                Everyday objects, such as umbrellas, books, bandannas, etc., become effective means of self-defense in the hands of a properly trained individual.
-                            
-                                Use of left and right hand techniques develop coordination. Drills and techniques taught in a fluid, non-restrictive manner allow students to enhance their natural attributes and improve their sense of  balance, coordination, agility, timing, speed, awareness and confidence.
+                                Come and experience the exotic Southeast Asian Martial Arts! You’ll have the best time while practicing a serious martial art.
                             </p>
                         </div>
-                        <div id="tabs-3">
+                        <h3>Filipino Martial Arts</h3>
+                        <div>
                             <p>
-                                Thai & Filipino Boxing utilizes the practitioner’s natural weapons, knees, elbows, kicks and punches.
+                                The highly sophisticated and comprehensive martial art from the Philippines is weapon based, but ultimately an empty hand system.
+                            </p>
+                            <p>
+                                The Filipino program introduces students to 12 main areas, including, but not limited to single stick, single sword, double stick, stick & dagger, sword & dagger, double dagger, panatukan (Filipino boxing), sikaran (Filipino kicking methods), spear, sarong and projectiles.
+                            </p>
+                            <p>
+                                In the US as long ago as the 1500′s, the Filipino Martial Arts have something to benefit everyone. Developed for “mass attack” as well as single opponent confrontations, the training heightens student’s awareness of their surroundings and teaches them to use their environment as tools of combat. Everyday objects, such as umbrellas, books, bandannas, etc., become effective means of self-defense in the hands of a properly trained individual. Use of left and right hand techniques develop coordination. Drills and techniques taught in a fluid, non-restrictive manner allow students to enhance their natural attributes and improve their sense of  balance, coordination, agility, timing, speed, awareness and confidence.
+                            </p>
+                        </div>
+                        <h3>Filipino 'Dirty' Boxing</h3>
+                        <div>
+                            <p>
+                                Filipino ‘Dirty’ Boxing (also known as Panantukan) is an empty hand art based on the movements of the knife.
+                            </p>
+                            <p>
+                                Having significantly influenced modern day Western Boxing, this art has no rules and utilizes all means necessary, including eye jabs, groin shots, head butts, elbows, knees, throwing and grappling.
+                            </p>
+                            <p>
+                                This class will focus on cardiovascular focus mitt work along with other partner training methodologies to transmit the art to the student.
+                            </p>
+                        </div>
+                        <h3>Thai Boxing</h3>
+                        <div>
+                            <p>
+                                Thai Boxing utilizes the practitioner’s natural weapons, knees, elbows, kicks and punches.
                             </p>
                             <p>
                                 Care is taken to teach students proper form and body mechanics to eliminate injuries while training and gain maximum effectiveness.
                             </p>
                             <p>
-                                The class places an emphasis on the physical conditioning and cardiovascular benefits of Thai & Filipino Boxing. 
-                            </p>
-                            <p>
-                                Train and push your limits or simply enjoy a class for recreational purposes.
+                                The class places an emphasis on the physical conditioning and cardiovascular benefits of Thai Boxing. Train and push your limits or simply enjoy a class for recreational purposes.
                             </p>
                         </div>
-                        <div id="tabs-4">
+                        <h3>Jun Fan JKD Kickboxing</h3>
+                        <div>
                             <p>
-                                • Workout
+                                The art & philosophy of Jeet Kune Do.
                             </p>
                             <p>
-                                • Bag Work
-                            </p>
-                            <p>
-                                • Practice –solo or with partner
-                            </p>
-                            <p>
-                                • Sparring
+                                Developed by Bruce Lee and preserve and transmitted by his protégé, student and training partner, Sifu Dan Inosanto.
                             </p>
                         </div>
-                        <div id="tabs-5">
+                        <h3>Open Gym</h3>
+                        <div>
                             <p>
-                                <i><b>Pentjak:</b></i> The art in the form of dance (not applied)
-                            </p>
-                            <p>
-                                <i><b>Silat:</b></i> The applied art
-                            </p>
-                            <p>
-                                Learn traditional <i>Langkahs</i> (foot paths), <i>Jurus</i> (short-hand forms), <i>Sambuts</i> (techniques) and many other traditional training methods.
+                                <ul>
+                                    <li>
+                                        Workout
+                                    </li>
+                                    <li>
+                                        Bag Work
+                                    </li>
+                                    <li>
+                                        Practice –solo or with partner
+                                    </li>
+                                    <li>
+                                        Sparring
+                                    </li>
+                                </ul>
+                                **Instructor approval required for sparring**
                             </p>
                         </div>
-                        <div id="tabs-6">
+                        <h3>Traditional Pentjak Silat</h3>
+                        <div>
                             <p>
-                                The bladed system founded and created by Pamana Tuhon Chris Sayoc
+                                A formal Class.
                             </p>
                             <p>
-                                **<i>Instructor Approval Required for this Class</i>**
+                                <b>Pentjak:</b> The art in the form of dance (not applied)
+                            </p>
+                            <p>
+                                <b>Silat:</b>  The applied art.
+                            </p>
+                            <p>
+                                Learn traditional
+                                <ul>
+                                    <li>
+                                        Langkahs (foot paths)
+                                    </li>
+                                    <li>
+                                        Jurus (short-hand forms)
+                                    </li>
+                                    <li>
+                                        Sambuts (techniques)
+                                    </li>
+                                </ul>
+                                and many other traditional training methods.
+                            </p>
+                        </div>
+                        <h3>Cimande</h3>
+                        <div>
+                            <p>
+                                An old Indonesian village and river bed martial art. This class will focus on bone conditioning partner drills.
+                            </p>
+                            <p>
+                                **Instructor approval required to take this class**
                             </p>
                         </div>
                     </div>
